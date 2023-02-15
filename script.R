@@ -62,3 +62,5 @@ all_fourth_coach <- all_fourth_coach[, c(1, 4)]
 #### Merge go_for_it_coach and all_fourth_coach to get 4th down go percentage ####
 go_rates <- merge(go_for_it_coach, all_fourth_coach, by='coach')
 go_rates$go_percentage <- round((go_rates$go/go_rates$all) * 100, 2)
+go_rates <- (go_rates[order(go_rates$go_percentage, decreasing = T), ]) 
+go_rates <- mutate(go_rates, rank = row_number())
