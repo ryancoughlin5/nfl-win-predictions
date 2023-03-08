@@ -1,12 +1,77 @@
-library(nflverse)
+library(nflfastR)
+library(nflreadr)
 library(tidyverse)
 library(plotly)
 library(ggplot2)
 library(lubridate)
 
 
-df <- nflfastR::load_pbp(2010:2022)
-schedules <- nflreadr::load_schedules(2010:2022)
+df <- nflfastR::load_pbp(2016:2022, )
+schedules <- nflreadr::load_schedules(2016:2022)
+formations <- nflreadr::load_participation(2016:2022)
+
+
+df$year <- substr(df$game_id, 1, 4)
+df$year <- as.character(df$year)
+
+formations$year <- substr(formations$nflverse_game_id, 1, 4)
+formations$year <- as.character(formations$year)
+
+df_formations <- df[, c(1:5, 8, 10)]
+formations <- inner_join(formations, df_formations, c('nflverse_game_id' = 'game_id', 'play_id' = 'play_id'))
+
+formations <- formations[, c(1, 2, 15, 3, 16:19, 4:14)]
+
+
+# look at defensive formations with missing personnel
+view(filter(formations, is.na(defense_personnel)))
+
+# get rid of missing formations
+formations <- filter(formations, !is.na(defense_personnel) | !is.na(offense_personnel) | !is.na(offense_personnel)) 
+
+defensive_personnel <- formations %>% 
+  group_by(defteam , year, defense_personnel) %>% 
+  count(defense_personnel) %>% 
+  arrange(defteam, year, desc(n))
+
+offensive_personnel <- formations %>% 
+       group_by(posteam , year, offense_personnel) %>% 
+       count(offense_personnel) %>% 
+       arrange(posteam, year, desc(n))
+
+offense_formation <- formations %>% 
+  group_by(posteam , year, offense_formation) %>% 
+  count(offense_formation) %>% 
+  arrange(posteam, year, desc(n))
+
+defensive_personnel <- defensive_personnel %>% 
+  group_by(defteam, year) %>% 
+  mutate(row_num = row_number())
+
+offensive_personnel <- offensive_personnel %>% 
+  group_by(posteam, year) %>% 
+  mutate(row_num = row_number())
+
+offense_formation <- offense_formation %>% 
+  group_by(posteam, year) %>% 
+  mutate(row_num = row_number())
+
+defensive_personnel <- filter(defensive_personnel, row_num == 1)
+offensive_personnel <- filter(offensive_personnel, row_num == 1)
+offense_formation <- filter(offense_formation, row_num == 1)
+
+typical_personnel <- inner_join(defensive_personnel, offensive_personnel, by=c('defteam'='posteam', 'year'='year'))
+typical_personnel <- inner_join(typical_personnel, offense_formation, by=c('defteam'='posteam', 'year'='year'))
+typical_personnel <- typical_personnel[, c(1:3, 6, 9)]
+
+
+
+#play_type_nfl, vegas_home_wp, vegas_wp, spread_line, home_wp, away_wp
+play_counts <- df %>% 
+     filter(play_type == 'run' | play_type == 'pass') %>% 
+     group_by(posteam, year, play_type) %>% 
+     mutate(count = n())
+
 
 column_names <- tibble(colnames(df))
 
