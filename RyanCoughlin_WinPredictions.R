@@ -5,11 +5,13 @@ library(plotly)
 library(ggplot2)
 library(lubridate)
 library(forecast)
+library(leaps) 
+library(zoo)
 options(scipen = 999)
 
 
-df <- nflfastR::load_pbp(2015:2022, )
-schedules <- nflreadr::load_schedules(2016:2022)
+df <- nflfastR::load_pbp(2010:2022)
+schedules <- nflreadr::load_schedules(2000:2022)
 formations <- nflreadr::load_participation(2016:2022)
 
 
@@ -208,13 +210,21 @@ team_info$team_name[team_info$team_name == 'San Diego Chargers'] = 'Los Angeles 
 team_info$team[team_info$team == 'OAK'] = 'LV'
 team_info$team_name[team_info$team_name == 'Oakland Raiders'] = 'Las Vegas Raiders'
 
+team_info <- team_info %>% 
+  group_by(team) %>% 
+  mutate(last_year = lag(wins, n=1), 
+         two_year_record = rollmean(lag(wins, n=1), 2, align='right', fill='NA'),
+         five_year_record = rollmean(lag(wins, n=1), 5, align='right', fill='NA'), 
+         ten_year_record = rollmean(lag(wins, n=1), 10, align='right', fill='NA'))
 
 ##### Join Team Data and Personnel Data ####
 team_info$season <- as.character(team_info$season)
-teams_df <- inner_join(typical_personnel, team_info[, c(1:11)], by=c('Team'='team', 'year'='season'))
+teams_df <- inner_join(typical_personnel, team_info[, c(1:11, 26, 25, 27, 24)], by=c('Team'='team', 'year'='season'))
 
 #average points per game
 teams_df$ppg <- if_else(teams_df$year == '2022', round(teams_df$total_points/17, 2), round(teams_df$total_points/16, 2))
+
+
 
 #### get betting and odds data from pbp data)
 
@@ -266,7 +276,9 @@ colnames(odds)[1] = 'Team'
 colnames(odds)[3] = 'home_spread'
 colnames(odds)[5] = 'away_spread'
 
-team_info <- inner_join(odds, team_info, by=c('Team'='team', 'year'='season'))
+
+
+teams_df <- inner_join(odds, teams_df, by=c('Team'='Team', 'year'='year'))
 
 head_coaches <- df %>% 
   group_by(home_team, year) %>% 
@@ -293,177 +305,200 @@ colnames(head_coaches)[3] = 'Coach'
 
 head_coaches <- head_coaches[, !names(head_coaches) %in% c('previous_coach')] #get rid of play type
 
-team_info <- inner_join(head_coaches, team_info, by=c('Team'='Team', 'year'='year'))
+teams_df <- inner_join(head_coaches, teams_df, by=c('Team'='Team', 'year'='year'))
 
+teams_df$defense_personnel <- as.factor(teams_df$defense_personnel)
+#teams_df$avg_vegas_home_wp <- teams_df$avg_vegas_home_wp/100
+#teams_df$avg_vegas_away_wp <- teams_df$avg_vegas_away_wp/100
+teams_df$ppg <- round(teams_df$ppg, 0)
+teams_df$offense_personnel <- if_else(teams_df$offense_personnel == '2 RB, 2 TE, 1 WR', 'Other', teams_df$offense_personnel)
 
 #### Regression ####
-vars <- c(4:16, 18)
+vars <- c(5:8, 10, 12, 13, 19, 22:26)
 
 set.seed(5)
-train_df <- team_info[team_info$year <= 2020, vars]
-validate_df <- team_info[team_info$year > 2020, vars]
+train_df <- teams_df[teams_df$year <= 2020, vars]
+validate_df <- teams_df[teams_df$year > 2020, vars]
 
-team_info_lm <- lm(wins ~., data=train_df)
-summary(team_info_lm)
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
 
 #### Predictions ####
-team_info_lm_pred <- predict(team_info_lm, validate_df)
-some_residuals <- validate_df$wins[1:14] - team_info_lm_pred[1:14]
-view(data.frame("Predicted" = team_info_lm_pred[1:14], "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
+wins_lm_pred <- predict(wins_lm, validate_df)
 
-accuracy(team_info_lm_pred, validate_df$wins)
+some_residuals <- validate_df$wins[1:14] - wins_lm_pred[1:14]
+view(data.frame("Predicted" = round(wins_lm_pred[1:14], 0), "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
 
+accuracy(wins_lm_pred, validate_df$wins)
 
+all_residuals <- validate_df$wins - wins_lm_pred
 
+length(all_residuals[which(all_residuals > -1.554  & all_residuals < 1.554)])/64
 
+hist(all_residuals,xlab = "Residuals", main = "")
 
-#### 
+wins_pred <- as.data.frame(wins_lm_pred)
+# cbind(wins_pred, validate_df)
+#### Exhaustive Search ####
 
+search <-  regsubsets(wins ~., data=train_df, nbest=1, nvmax=dim(train_df)[2], method='exhaustive')
+dim(train_df)
+sum <- summary(search)
+view(sum$which)
 
-#### Player Data no 2022 as far as I can tell####
-# player_info <- load_players()
-# team_ids <- team_info[c('team', 'team_name', 'team_id')]
-# player_info <-  inner_join(player_info, team_ids, by=c('current_team_id' = 'team_id'))
-# player_info$age <- interval(end=today(), start=player_info$birth_date)/duration(n=1, unit='years')
-# player_info$age <- round(player_info$age, 0)
-# 
-# player_info_2022 <- subset(player_info, season == 2022)
-# 
-# 
-# player_info_2022 %>% 
-#   group_by(team) %>% 
-#   summarise(avg_age = mean(age))
-# player stats and rosters
-# player_stats <- load_player_stats(season=c(2016:2022))
-# rosters <- load_rosters(season=c(2016:2022))
-# 
-# player_stats$recent_team[player_stats$recent_team == 'STL'] = 'LA'
-# 
-# player_stats$recent_team[player_stats$recent_team == 'SD'] = 'LAC'
-# 
-# player_stats$recent_team[player_stats$recent_team == 'OAK'] = 'LV'
-# 
-# qb_stats <- player_stats %>% 
-#   group_by(player_display_name, recent_team, position, season) %>% 
-#   filter(position_group == 'QB') %>% 
-#   summarise(total_attempts = sum(attempts), total_yards = sum(passing_yards), total_epa = round(sum(passing_epa), 0), predicted_epa_next = round(sum(dakota), 0))
-# 
-# qb_stats <-  inner_join(qb_stats, team_info[c('team', 'team_color', 'season')], by=c('recent_team' = 'team', 'season' = 'season'))
-# 
-# rb_stats <- player_stats %>% 
-#   group_by(player_display_name, recent_team, position, season) %>% 
-#   filter(position_group == 'RB') %>% 
-#   summarise(total_yards = sum(rushing_yards), total_epa = round(sum(rushing_epa), 0))
-# 
-# receiving_stats <- player_stats %>% 
-#   group_by(player_display_name, recent_team, position, season) %>% 
-#   filter(position_group == 'WR' | position_group == 'TE') %>% 
-#   summarise(total_yards = sum(receiving_yards), total_epa = round(sum(receiving_epa), 0))
+# create indicators out of my factor column to take out insignificant rows
+sum$rsq
+sum$adjr2
+sum$cp
+plot(search)
+plot(search, scale='adjr2')
 
+#### Take Home and away spread out ####
+teams_df$defense_personnel <- if_else(teams_df$defense_personnel == '2 DL, 3 LB, 6 DB' | teams_df$defense_personnel == '3 DL, 4 LB, 4 DB', 
+                                      teams_df$defense_personnel, 
+                                      'Other')
 
+vars <- c(which(colnames(teams_df)=='wins'), 
+          which(colnames(teams_df)=='home_spread'),
+          which(colnames(teams_df)=='avg_vegas_home_wp'),
+          which(colnames(teams_df)=='away_spread'),
+          which(colnames(teams_df)=='avg_vegas_away_wp'), 
+          which(colnames(teams_df)=='defense_personnel'), 
+          which(colnames(teams_df)=='ppg'))
 
+set.seed(5)
+train_df <- teams_df[teams_df$year <= 2020, vars]
+validate_df <- teams_df[teams_df$year > 2020, vars]
 
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
 
-### Start aggregating and visualizing ####
-# team_info %>% 
-#   select(team_name, wins, losses, ties, team_color, team_color2) %>% 
-#   group_by(team_name, team_color, team_color2) %>% 
-#   summarise(avg_wins = mean(wins), avg_losses = mean(losses), avg_tiess = mean(ties)) %>% 
-#   plot_ly(x=~team_name, 
-#           y=~avg_wins, 
-#           marker=list(color=~team_color)) %>% 
-#   layout(xaxis = list(categoryorder = "total descending", title='Team'),
-#          yaxis = list(title='Average Wins')) 
-# 
-# team_info %>% 
-#   select(team, wins, losses, ties, team_color, team_color2) %>% 
-#   group_by(team, team_color, team_color2) %>% 
-#   summarise(avg_wins = mean(wins), avg_losses = mean(losses), avg_tiess = mean(ties)) %>% 
-#   plot_ly(x=~team, 
-#           y=~avg_losses, 
-#           marker=list(color=~team_color)) %>% 
-#   layout(xaxis = list(categoryorder = "total descending", title='Team'),
-#          yaxis = list(title='Average Losses')) 
-#   
-# # 2022 Season
-# season_2022 <- team_info[team_info$season == '2022', ]
-# 
-# # Avg PPG Points for 2022
-# ggplot(season_2022, aes(x=reorder(team, desc(total_points)), y=total_points, color=team_color2, fill=team_color)) + 
-#   geom_col(size=1) +
-#   scale_color_identity() +
-#   scale_fill_identity() +
-#   ylab('Points') +
-#   ggtitle("Average Points Per Game - 2022") +
-#   theme_classic() +
-#   theme(axis.title.x = element_blank(), plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label=round(total_points/17, 1), vjust=3))
-# 
-# 
-# # total wins for 2022
-# ggplot(season_2022, aes(x=reorder(team, desc(wins)), y=wins, color=team_color2, fill=team_color)) + 
-#   geom_col(size=1) +
-#   scale_color_identity() +
-#   scale_fill_identity() +
-#   ylab('2022 Wins') +
-#   ggtitle("2022 Win Totals") +
-#   theme_classic() +
-#   theme(axis.title.x = element_blank(), plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label=wins, vjust=3))
-# 
-# 
-# #### "Average Regular Season Wins Since 2010" ####
-# avg_wins <- team_info %>% 
-#   select(team, team_division, wins, losses, ties, team_color, team_color2) %>% 
-#   group_by(team, team_division, team_color, team_color2, ) %>% 
-#   summarise(avg_wins = mean(wins), avg_losses = mean(losses), avg_tiess = mean(ties)) 
-# 
-# # avg wins per season
-# ggplot(avg_wins, aes(x=reorder(team, desc(avg_wins)), y=avg_wins, color=team_color2, fill=team_color)) + 
-#   geom_col(size=1) +
-#   scale_color_identity() +
-#   scale_fill_identity() +
-#   ylab('Avergae Wins') +
-#   ggtitle("Average Regular Season Wins Since 2010") +
-#   theme_classic() +
-#   theme(axis.title.x = element_blank(), plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label=round(avg_wins, 2), vjust=3))
-# 
-# 
-# ggplot(avg_wins, aes(x=reorder(team, desc(avg_wins)), y=avg_wins, color=team_color2, fill=team_color)) + 
-#   geom_col(size=1) +
-#   scale_color_identity() +
-#   scale_fill_identity() +
-#   ylab('Avergae Wins') +
-#   ggtitle("Average Regular Season Wins Since 2010") +
-#   theme_classic() +
-#   theme(axis.title.x = element_blank(), plot.title = element_text(hjust = 0.5)) +
-#   geom_text(aes(label=round(avg_wins, 2), vjust=3)) + 
-#   facet_wrap(~team_division, scales='free')
-# 
-# ## player stats graphs
-# qb_stats_over_350 <- qb_stats[qb_stats$total_attempts > 350, ]
-# qb_stats_over_350 <- qb_stats_over_350[order(qb_stats_over_350$total_yards, decreasing=T),]
-# list(qb_stats_over_350[1:10, 1])
-# qb_stats_over_350_top10 <- qb_stats_over_350[qb_stats_over_350$player_display_name %in% c('Matthew Stafford',
-#                                                                                                   'Patrick Mahomes',  
-#                                                                                                   'Tom Brady',
-#                                                                                                   'Joe Burrow',
-#                                                                                                   'Josh Allen',
-#                                                                                                   'Derek Carr'), ]
-# 
-# ggplot(qb_stats_over_350_top10 , aes(x=season, y=total_yards, color=team_color, group=player_display_name))+
-#   geom_line()+
-#   scale_color_identity() +
-#   theme_classic() + 
-#   geom_text(aes(label= player_display_name))+
-#   ylab('Total Yards') + 
-#   xlab('Season')+
-#   ggtitle('Most Yards Since 2019')+
-#   theme(plot.title = element_text(hjust = 0.5))
-# 
+#### Predictions ####
+wins_lm_pred <- predict(wins_lm, validate_df)
+
+some_residuals <- validate_df$wins[1:14] - wins_lm_pred[1:14]
+view(data.frame("Predicted" = wins_lm_pred[1:14], "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
+
+accuracy(wins_lm_pred, validate_df$wins)
+
+all_residuals <- validate_df$wins - wins_lm_pred
+
+length(all_residuals[which(all_residuals > -1.551  & all_residuals < 1.551)])/64
+
+hist(all_residuals,xlab = "Residuals", main = "")
+
+wins_pred <- as.data.frame(wins_lm_pred)
 
 
+
+#### Reduce vars again ####
+vars <- c(which(colnames(teams_df)=='wins'), 
+          which(colnames(teams_df)=='home_spread'),
+          which(colnames(teams_df)=='avg_vegas_home_wp'),
+          which(colnames(teams_df)=='away_spread'),
+          which(colnames(teams_df)=='avg_vegas_away_wp'), 
+          which(colnames(teams_df)=='ppg'),
+          which(colnames(teams_df)=='total_points'))
+
+set.seed(5)
+train_df <- teams_df[teams_df$year <= 2020, vars]
+validate_df <- teams_df[teams_df$year > 2020, vars]
+
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
+
+#### Predictions ####
+wins_lm_pred <- predict(wins_lm, validate_df)
+
+some_residuals <- validate_df$wins[1:14] - wins_lm_pred[1:14]
+view(data.frame("Predicted" = wins_lm_pred[1:14], "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
+
+accuracy(wins_lm_pred, validate_df$wins)
+
+all_residuals <- validate_df$wins - wins_lm_pred
+
+length(all_residuals[which(all_residuals > -1.555  & all_residuals < 1.555)])/64
+
+hist(all_residuals,xlab = "Residuals", main = "")
+
+wins_pred <- as.data.frame(wins_lm_pred)
+
+## Backward ##
+vars <- c(5:8, 10, 12, 13, 19, 22:26)
+set.seed(5)
+train_df <- na.omit(teams_df[teams_df$year <= 2020, vars])
+
+validate_df <- na.omit(teams_df[teams_df$year > 2020, vars])
+
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
+wins_lm_step <- stats::step(wins_lm, direction = 'backward')
+wins_lm_step_pred <- predict(wins_lm_step, validate_df)
+summary(wins_lm_step)
+
+some_residuals <- validate_df$wins[1:14] - wins_lm_step_pred[1:14]
+view(data.frame("Predicted" = wins_lm_step_pred[1:14], "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
+
+accuracy(wins_lm_step_pred, validate_df$wins)
+
+all_residuals <- validate_df$wins - wins_lm_step_pred
+
+length(all_residuals[which(all_residuals > -1.555  & all_residuals < 1.555)])/64
+
+hist(all_residuals,xlab = "Residuals", main = "")
+
+wins_pred <- as.data.frame(wins_lm_step_pred)
+
+#### Step-wise Regression ####
+## Both ##
+vars <- c(5:8, 10, 12, 13, 19, 22:26)
+set.seed(5)
+train_df <- teams_df[teams_df$year <= 2020, vars]
+train_df <- na.omit(train_df)
+validate_df <- teams_df[teams_df$year > 2020, vars]
+
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
+wins_lm_step <- stats::step(wins_lm, direction = 'both')
+wins_lm_step_pred <- predict(wins_lm_step, validate_df)
+summary(wins_lm_step)
+
+## Forward ##
+vars <- c(5:8, 10, 12, 13, 19, 22:26)
+set.seed(5)
+train_df <- teams_df[teams_df$year <= 2020, vars]
+validate_df <- teams_df[teams_df$year > 2020, vars]
+
+wins_lm <- lm(wins ~., data=train_df)
+summary(wins_lm)
+wins_lm_step <- stats::step(wins_lm, direction = 'forward')
+wins_lm_step_pred <- predict(wins_lm_step, validate_df)
+summary(wins_lm_step)
+
+some_residuals <- validate_df$wins[1:14] - wins_lm_step_pred[1:14]
+view(data.frame("Predicted" = wins_lm_step_pred[1:14], "Actual" = validate_df$wins[1:14], "Residual" = some_residuals))
+
+accuracy(wins_lm_step_pred, validate_df$wins)
+
+all_residuals <- validate_df$wins - wins_lm_step_pred
+
+length(all_residuals[which(all_residuals > -1.555  & all_residuals < 1.555)])/64
+
+hist(all_residuals,xlab = "Residuals", main = "")
+
+wins_pred <- as.data.frame(wins_lm_step_pred)
+
+#### Predicting 2023 Wins
+# vars <- c(5:8, 10, 12, 13, 19, 22)
+# set.seed(5)
+# train_df <- teams_df[teams_df$year <= 2020, vars]
+# validate_df <- teams_df[teams_df$year > 2020, vars]
+# 
+# wins_lm <- lm(wins ~., data=train_df)
+# summary(wins_lm)
+# wins_lm_step <- stats::step(wins_lm, direction = 'backward')
+# wins_lm_step_pred <- predict(wins_lm_step)
+# summary(wins_lm_step)
 
 
 

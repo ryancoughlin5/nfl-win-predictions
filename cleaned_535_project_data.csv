@@ -1,0 +1,225 @@
+"","Team","year","Coach","new_coach","home_spread","avg_vegas_home_wp","away_spread","avg_vegas_away_wp","avg_spread","defense_personnel","offense_personnel","offense_formation","wins","points_win","losses","points_loss","ties","points_tie","total_points","team_name","team_id","five_year_record","two_year_record","ten_year_record","last_year","ppg"
+"1","ARI","2016","Bruce Arians",0,7,0.7,0.06,0.51,3.53,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",7,233,8,179,1,6,418,"Arizona Cardinals","3800",9.4,12,8.4,13,26
+"2","ARI","2017","Bruce Arians",0,-2.31,0.41,-1.44,0.45,-1.875,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",8,180,8,115,0,0,295,"Arizona Cardinals","3800",9.2,10,8.6,7,18
+"3","ARI","2018","Steve Wilks",1,-2.94,0.41,-12,0.17,-7.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,66,13,159,0,0,225,"Arizona Cardinals","3800",9.8,7.5,8.6,8,14
+"4","ARI","2019","Kliff Kingsbury",1,-3.38,0.38,-7.81,0.25,-5.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,152,10,182,1,27,361,"Arizona Cardinals","3800",8.4,5.5,8,3,23
+"5","ARI","2020","Kliff Kingsbury",0,3.44,0.62,0.25,0.52,1.845,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,250,8,160,0,0,410,"Arizona Cardinals","3800",7.2,4,7.5,5,26
+"6","ARI","2021","Kliff Kingsbury",0,6.94,0.71,0.56,0.51,3.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,337,6,112,0,0,449,"Arizona Cardinals","3800",6.2,6.5,7.8,8,28
+"7","ARI","2022","Kliff Kingsbury",0,-3.67,0.37,-4.25,0.36,-3.96,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",4,124,13,216,0,0,340,"Arizona Cardinals","3800",7,9.5,8.1,11,20
+"8","ATL","2016","Dan Quinn",0,4.62,0.65,-0.88,0.48,1.87,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",11,419,5,121,0,0,540,"Atlanta Falcons","0200",8.2,7,8.5,8,34
+"9","ATL","2017","Dan Quinn",0,6.12,0.68,2.06,0.58,4.09,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",10,273,6,80,0,0,353,"Atlanta Falcons","0200",8.4,9.5,8.9,11,22
+"10","ATL","2018","Dan Quinn",0,4.25,0.63,-1.38,0.47,1.435,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,224,9,190,0,0,414,"Atlanta Falcons","0200",7.8,10.5,9.5,10,26
+"11","ATL","2019","Dan Quinn",0,-0.06,0.5,-4.31,0.37,-2.185,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,200,9,181,0,0,381,"Atlanta Falcons","0200",8.4,8.5,9.1,7,24
+"12","ATL","2020","Dan Quinn",0,-0.06,0.48,-4.5,0.36,-2.28,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,142,12,254,0,0,396,"Atlanta Falcons","0200",8.6,7,8.9,7,25
+"13","ATL","2021","Arthur Smith",1,-0.88,0.46,-6.06,0.33,-3.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,171,10,142,0,0,313,"Atlanta Falcons","0200",7.8,5.5,8,4,20
+"14","ATL","2022","Arthur Smith",0,0.72,0.52,-5.12,0.34,-2.2,"Other","1 RB, 1 TE, 3 WR","PISTOL",7,192,10,173,0,0,365,"Atlanta Falcons","0200",7,5.5,7.7,7,21
+"15","BAL","2016","John Harbaugh",0,3.31,0.61,-2.06,0.43,0.625,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,190,8,153,0,0,343,"Baltimore Ravens","0325",9,7.5,9.5,5,21
+"16","BAL","2017","John Harbaugh",0,5.5,0.67,-0.94,0.47,2.28,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,254,7,141,0,0,395,"Baltimore Ravens","0325",8.2,6.5,9,8,25
+"17","BAL","2018","John Harbaugh",0,6.5,0.71,-1.12,0.47,2.69,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,273,6,116,0,0,389,"Baltimore Ravens","0325",8,8.5,9.4,9,24
+"18","BAL","2019","John Harbaugh",0,6.56,0.7,4.12,0.65,5.34,"Other","1 RB, 1 TE, 3 WR","PISTOL",14,478,2,53,0,0,531,"Baltimore Ravens","0325",8.4,9.5,9.3,10,33
+"19","BAL","2020","John Harbaugh",0,8.06,0.75,5.56,0.67,6.81,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,369,5,99,0,0,468,"Baltimore Ravens","0325",9.2,12,9.8,14,29
+"20","BAL","2021","John Harbaugh",0,1.17,0.53,2.06,0.58,1.615,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,209,9,178,0,0,387,"Baltimore Ravens","0325",10.4,12.5,9.7,11,24
+"21","BAL","2022","John Harbaugh",0,4.94,0.66,0.22,0.53,2.58,"Other","Other","SHOTGUN",10,213,7,137,0,0,350,"Baltimore Ravens","0325",10.4,9.5,9.3,8,21
+"22","BUF","2016","Rex Ryan",0,2.62,0.57,-1.12,0.46,0.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,201,9,198,0,0,399,"Buffalo Bills","0610",7,8.5,6.6,8,25
+"23","BUF","2017","Sean McDermott",1,0.81,0.52,-4.81,0.35,-2,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,209,7,93,0,0,302,"Buffalo Bills","0610",7.2,7.5,6.6,7,19
+"24","BUF","2018","Sean McDermott",0,-3.5,0.4,-9.25,0.22,-6.375,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,161,10,108,0,0,269,"Buffalo Bills","0610",7.8,8,6.8,9,17
+"25","BUF","2019","Sean McDermott",0,2.81,0.57,-1.94,0.44,0.435,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,235,6,79,0,0,314,"Buffalo Bills","0610",7.8,7.5,6.7,6,20
+"26","BUF","2020","Sean McDermott",0,0.81,0.52,3.62,0.64,2.215,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,438,3,63,0,0,501,"Buffalo Bills","0610",8,8,7.1,10,31
+"27","BUF","2021","Sean McDermott",0,11.39,0.82,4.62,0.65,8.005,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,378,6,105,0,0,483,"Buffalo Bills","0610",9,11.5,8,13,30
+"28","BUF","2022","Sean McDermott",0,9.19,0.77,5.38,0.69,7.285,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,389,3,66,0,0,455,"Buffalo Bills","0610",9.8,12,8.5,11,27
+"29","CAR","2016","Ron Rivera",0,3.88,0.62,-1.44,0.45,1.22,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,166,10,203,0,0,369,"Carolina Panthers","0750",9.4,11,8.4,15,23
+"30","CAR","2017","Ron Rivera",0,3.81,0.62,-1.31,0.47,1.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,293,5,70,0,0,363,"Carolina Panthers","0750",9.4,10.5,8.2,6,23
+"31","CAR","2018","Ron Rivera",0,1.25,0.54,-1.56,0.45,-0.155,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,212,9,164,0,0,376,"Carolina Panthers","0750",10.2,8.5,8.6,11,24
+"32","CAR","2019","Ron Rivera",0,0.75,0.53,-4.56,0.35,-1.905,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,155,11,185,0,0,340,"Carolina Panthers","0750",9.2,9,8.1,7,21
+"33","CAR","2020","Matt Rhule",1,-1.69,0.43,-5.56,0.32,-3.625,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,115,11,235,0,0,350,"Carolina Panthers","0750",8.8,6,7.8,5,22
+"34","CAR","2021","Matt Rhule",0,-1.06,0.47,-3.78,0.38,-2.42,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,122,12,182,0,0,304,"Carolina Panthers","0750",6.8,5,8.1,5,19
+"35","CAR","2022","Matt Rhule",0,-2.33,0.42,-5.5,0.32,-3.915,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,168,10,179,0,0,347,"Carolina Panthers","0750",6.6,5,8,5,20
+"36","CHI","2016","John Fox",0,-2.12,0.4,-5.19,0.32,-3.655,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,63,13,216,0,0,279,"Chicago Bears","0810",7.4,5.5,8.4,6,17
+"37","CHI","2017","John Fox",0,-1.25,0.45,-8.25,0.25,-4.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,120,11,144,0,0,264,"Chicago Bears","0810",6.4,4.5,7.4,3,16
+"38","CHI","2018","Matt Nagy",1,3.56,0.62,2.69,0.59,3.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,312,4,109,0,0,421,"Chicago Bears","0810",5.4,4,7.2,5,26
+"39","CHI","2019","Matt Nagy",0,1.56,0.56,1.44,0.55,1.5,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,178,8,102,0,0,280,"Chicago Bears","0810",6.2,8.5,7.5,12,18
+"40","CHI","2020","Matt Nagy",0,-1.75,0.42,-2.56,0.42,-2.155,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,227,8,145,0,0,372,"Chicago Bears","0810",6.8,10,7.6,8,23
+"41","CHI","2021","Matt Nagy",0,-2.19,0.42,-6.89,0.27,-4.54,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,134,11,177,0,0,311,"Chicago Bears","0810",7.2,8,7.3,8,19
+"42","CHI","2022","Matt Eberflus",1,-3.61,0.37,-7.44,0.28,-5.525,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,75,14,251,0,0,326,"Chicago Bears","0810",7.8,7,7.1,6,19
+"43","CIN","2016","Marvin Lewis",0,2.94,0.58,-1.31,0.47,0.815,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,158,9,140,1,27,325,"Cincinnati Bengals","0920",10.4,11,8.5,12,20
+"44","CIN","2017","Marvin Lewis",0,3.5,0.61,-5.19,0.32,-0.845,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,182,9,108,0,0,290,"Cincinnati Bengals","0920",9.8,9,8.3,6,18
+"45","CIN","2018","Marvin Lewis",0,0.56,0.51,-7.38,0.29,-3.41,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,199,10,169,0,0,368,"Cincinnati Bengals","0920",9.2,6.5,8.3,7,23
+"46","CIN","2019","Zac Taylor",1,-3.94,0.37,-7.38,0.25,-5.66,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",2,55,14,224,0,0,279,"Cincinnati Bengals","0920",8.2,6.5,8.5,6,17
+"47","CIN","2020","Zac Taylor",0,-6.38,0.3,-7.25,0.26,-6.815,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,128,11,160,1,23,311,"Cincinnati Bengals","0920",6.6,4,7.7,2,19
+"48","CIN","2021","Zac Taylor",0,1.39,0.54,-0.56,0.48,0.415,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,313,7,147,0,0,460,"Cincinnati Bengals","0920",5,3,7.7,4,29
+"49","CIN","2022","Zac Taylor",0,5.43,0.68,3.11,0.62,4.27,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,351,4,67,0,0,418,"Cincinnati Bengals","0920",5.8,7,7.8,10,25
+"50","CLE","2016","Hue Jackson",1,-5.81,0.29,-7.69,0.27,-6.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",1,20,15,244,0,0,264,"Cleveland Browns","1050",4.6,5,5.1,3,16
+"51","CLE","2017","Hue Jackson",0,-5.94,0.3,-7.25,0.27,-6.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",0,0,16,234,0,0,234,"Cleveland Browns","1050",7.8,7.5,5.9,7,15
+"52","CLE","2018","Hue Jackson",0,-0.81,0.45,-4.56,0.35,-2.685,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,165,8,173,1,21,359,"Cleveland Browns","1050",4,2,4.8,1,22
+"53","CLE","2019","Freddie Kitchens",1,2.06,0.56,-0.62,0.49,0.72,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,171,10,164,0,0,335,"Cleveland Browns","1050",4.4,4,4.5,7,21
+"54","CLE","2020","Kevin Stefanski",1,3.75,0.62,0.88,0.53,2.315,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",11,331,5,77,0,0,408,"Cleveland Browns","1050",4.8,6.5,4.7,6,26
+"55","CLE","2021","Kevin Stefanski",0,5.67,0.68,-2.69,0.42,1.49,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,187,9,162,0,0,349,"Cleveland Browns","1050",5.6,8.5,5.3,11,22
+"56","CLE","2022","Kevin Stefanski",0,1.5,0.55,-2.11,0.44,-0.305,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,174,10,187,0,0,361,"Cleveland Browns","1050",6.6,9.5,5.6,8,21
+"57","DAL","2016","Jason Garrett",0,4.5,0.65,-0.44,0.49,2.03,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,382,3,39,0,0,421,"Dallas Cowboys","1200",8,8,8.8,4,26
+"58","DAL","2017","Jason Garrett",0,1.44,0.54,2.75,0.6,2.095,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,242,7,112,0,0,354,"Dallas Cowboys","1200",9,8.5,9.2,13,22
+"59","DAL","2018","Jason Garrett",0,2.19,0.57,-3.38,0.4,-0.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,271,6,68,0,0,339,"Dallas Cowboys","1200",9.2,11,8.8,9,21
+"60","DAL","2019","Jason Garrett",0,7.19,0.69,3.62,0.62,5.405,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,297,8,137,0,0,434,"Dallas Cowboys","1200",9.6,9.5,8.9,10,27
+"61","DAL","2020","Mike McCarthy",1,-0.44,0.48,-3.31,0.39,-1.875,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,216,10,179,0,0,395,"Dallas Cowboys","1200",8.8,9,8.6,8,25
+"62","DAL","2021","Mike McCarthy",0,7.25,0.72,1.56,0.56,4.405,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,421,5,109,0,0,530,"Dallas Cowboys","1200",9.2,7,8.6,6,33
+"63","DAL","2022","Mike McCarthy",0,5.89,0.67,2.19,0.56,4.04,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,379,5,88,0,0,467,"Dallas Cowboys","1200",9,9,9,12,27
+"64","DEN","2016","Gary Kubiak",0,2.38,0.58,-0.38,0.5,1,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",9,234,7,99,0,0,333,"Denver Broncos","1400",11.6,12,9.4,12,21
+"65","DEN","2017","Vance Joseph",1,1.94,0.54,-1.5,0.45,0.22,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",5,130,11,159,0,0,289,"Denver Broncos","1400",11.8,10.5,9.4,9,18
+"66","DEN","2018","Vance Joseph",0,-1.25,0.45,-1.31,0.46,-1.28,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,163,10,166,0,0,329,"Denver Broncos","1400",10.2,7,9.2,5,21
+"67","DEN","2019","Vic Fangio",1,0.5,0.51,-5.69,0.31,-2.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,164,9,118,0,0,282,"Denver Broncos","1400",8.8,5.5,9,6,18
+"68","DEN","2020","Vic Fangio",0,-6,0.3,-5.19,0.33,-5.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,138,11,185,0,0,323,"Denver Broncos","1400",7.8,6.5,8.9,7,20
+"69","DEN","2021","Vic Fangio",0,2.61,0.58,-2.12,0.44,0.245,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,189,10,146,0,0,335,"Denver Broncos","1400",6.4,6,9,5,21
+"70","DEN","2022","Nathaniel Hackett",1,1.56,0.55,-2.5,0.43,-0.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,103,12,184,0,0,287,"Denver Broncos","1400",6,6,8.9,7,17
+"71","DET","2016","Jim Caldwell",0,1.94,0.56,-3.44,0.39,-0.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,226,7,120,0,0,346,"Detroit Lions","1540",7.8,9,6.2,7,22
+"72","DET","2017","Jim Caldwell",0,1.75,0.55,-0.69,0.49,0.53,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,247,7,163,0,0,410,"Detroit Lions","1540",7.6,8,6.6,9,26
+"73","DET","2018","Matt Patricia",1,-2.5,0.41,-3.12,0.4,-2.81,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,157,10,167,0,0,324,"Detroit Lions","1540",8.6,9,7.2,9,20
+"74","DET","2019","Matt Patricia",0,-4.56,0.35,-3.88,0.38,-4.22,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,71,12,243,1,27,341,"Detroit Lions","1540",8.4,7.5,7.1,6,21
+"75","DET","2020","Matt Patricia",0,-3.62,0.38,-2.75,0.41,-3.185,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,147,11,230,0,0,377,"Detroit Lions","1540",6.8,4.5,7.2,3,24
+"76","DET","2021","Dan Campbell",1,-6.19,0.29,-10.28,0.2,-8.235,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,96,13,213,1,16,325,"Detroit Lions","1540",6.4,4,7.1,5,20
+"77","DET","2022","Dan Campbell",0,-1.5,0.44,-3.44,0.38,-2.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,268,8,185,0,0,453,"Detroit Lions","1540",5.2,4,6.4,3,27
+"78","GB","2016","Mike McCarthy",0,5.38,0.69,0.81,0.54,3.095,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,295,6,137,0,0,432,"Green Bay Packers","1800",11.2,11,10.4,10,27
+"79","GB","2017","Mike McCarthy",0,0.38,0.51,-3.69,0.4,-1.655,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",7,190,9,130,0,0,320,"Green Bay Packers","1800",10.2,10,10.6,10,20
+"80","GB","2018","Mike McCarthy",0,7.5,0.74,-2.62,0.41,2.44,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",6,188,9,159,1,29,376,"Green Bay Packers","1800",9.4,8.5,10,7,24
+"81","GB","2019","Matt LaFleur",1,5.56,0.69,1.88,0.56,3.72,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,330,3,46,0,0,376,"Green Bay Packers","1800",9,6.5,10,6,24
+"82","GB","2020","Matt LaFleur",0,7.38,0.75,2.44,0.6,4.91,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",13,446,3,63,0,0,509,"Green Bay Packers","1800",9.2,9.5,10.2,13,32
+"83","GB","2021","Matt LaFleur",0,7.44,0.73,1,0.54,4.22,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,379,4,71,0,0,450,"Green Bay Packers","1800",9.8,13,10.5,13,28
+"84","GB","2022","Matt LaFleur",0,5.83,0.68,-1.5,0.47,2.165,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,218,9,152,0,0,370,"Green Bay Packers","1800",10.4,13,10.3,13,22
+"85","HOU","2016","Bill O'Brien",0,2.06,0.56,-5.19,0.32,-1.565,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,194,7,85,0,0,279,"Houston Texans","2120",8.4,9,7.9,9,17
+"86","HOU","2017","Bill O'Brien",0,1.25,0.54,-8.44,0.22,-3.595,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",4,134,12,204,0,0,338,"Houston Texans","2120",8.2,9,8.2,9,21
+"87","HOU","2018","Bill O'Brien",0,5.94,0.7,0.31,0.52,3.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,292,5,110,0,0,402,"Houston Texans","2120",6.6,6.5,7.8,4,25
+"88","HOU","2019","Bill O'Brien",0,2.5,0.59,-2.44,0.42,0.03,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,272,6,106,0,0,378,"Houston Texans","2120",8.4,7.5,8.1,11,24
+"89","HOU","2020","Bill O'Brien",0,-0.69,0.47,-2.31,0.42,-1.5,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,125,12,259,0,0,384,"Houston Texans","2120",8.6,10.5,8.2,10,24
+"90","HOU","2021","David Culley",1,-8.61,0.24,-12.25,0.17,-10.43,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,130,13,150,0,0,280,"Houston Texans","2120",7.6,7,8,4,18
+"91","HOU","2022","Lovie Smith",1,-7,0.27,-7.78,0.26,-7.39,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,64,13,205,1,20,289,"Houston Texans","2120",6.6,4,7.4,4,17
+"92","IND","2016","Chuck Pagano",0,1.5,0.55,-3.75,0.37,-1.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,243,8,168,0,0,411,"Indianapolis Colts","2200",8.6,9.5,10.4,8,26
+"93","IND","2017","Chuck Pagano",0,-2.62,0.41,-8.38,0.24,-5.5,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",4,99,12,164,0,0,263,"Indianapolis Colts","2200",9.8,8,10,8,16
+"94","IND","2018","Frank Reich",1,4,0.62,-2.12,0.44,0.94,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,302,6,131,0,0,433,"Indianapolis Colts","2200",8.4,6,9.1,4,27
+"95","IND","2019","Frank Reich",0,4.25,0.63,-3.75,0.38,0.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,181,9,180,0,0,361,"Indianapolis Colts","2200",8.2,7,8.9,10,23
+"96","IND","2020","Frank Reich",0,6.5,0.69,2.62,0.6,4.56,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,348,5,103,0,0,451,"Indianapolis Colts","2200",7.4,8.5,8.2,7,28
+"97","IND","2021","Frank Reich",0,3.56,0.6,-0.56,0.47,1.5,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,277,8,174,0,0,451,"Indianapolis Colts","2200",8,9,8.3,11,28
+"98","IND","2022","Frank Reich",0,-0.06,0.48,-2.83,0.41,-1.445,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,91,12,178,1,20,289,"Indianapolis Colts","2200",8.2,10,9,9,17
+"99","JAX","2016","Gus Bradley",0,-1.19,0.44,-4.81,0.33,-3,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,85,13,233,0,0,318,"Jacksonville Jaguars","2250",3.8,4,5.8,5,20
+"100","JAX","2017","Doug Marrone",1,3.94,0.63,1.19,0.55,2.565,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,297,6,120,0,0,417,"Jacksonville Jaguars","2250",3.4,4,5.3,3,26
+"101","JAX","2018","Doug Marrone",0,1.88,0.54,-1.62,0.45,0.13,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,105,11,140,0,0,245,"Jacksonville Jaguars","2250",5,6.5,5.2,10,15
+"102","JAX","2019","Doug Marrone",0,-0.75,0.46,-3.81,0.38,-2.28,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,160,10,140,0,0,300,"Jacksonville Jaguars","2250",5.2,7.5,5.2,5,19
+"103","JAX","2020","Doug Marrone",0,-6.19,0.29,-9.38,0.21,-7.785,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",1,27,15,279,0,0,306,"Jacksonville Jaguars","2250",5.8,5.5,5.1,6,19
+"104","JAX","2021","Urban Meyer",1,-5.67,0.32,-7.62,0.29,-6.645,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,58,14,195,0,0,253,"Jacksonville Jaguars","2250",5,3.5,4.4,1,16
+"105","JAX","2022","Doug Pederson",1,0.5,0.51,-3.33,0.4,-1.415,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,263,8,141,0,0,404,"Jacksonville Jaguars","2250",5,2,4.2,3,24
+"106","KC","2016","Andy Reid",0,5.31,0.69,-0.5,0.49,2.405,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",12,329,4,60,0,0,389,"Kansas City Chiefs","2310",8,10,6.9,11,24
+"107","KC","2017","Andy Reid",0,5.75,0.7,1.06,0.54,3.405,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",10,305,6,110,0,0,415,"Kansas City Chiefs","2310",9,11.5,7.2,12,26
+"108","KC","2018","Andy Reid",0,8.12,0.75,1.38,0.54,4.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,415,4,150,0,0,565,"Kansas City Chiefs","2310",10.6,11,7.8,10,35
+"109","KC","2019","Andy Reid",0,4.94,0.65,4.38,0.66,4.66,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,358,4,93,0,0,451,"Kansas City Chiefs","2310",10.8,11,8.8,12,28
+"110","KC","2020","Andy Reid",0,9.31,0.77,4.81,0.67,7.06,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",14,420,2,53,0,0,473,"Kansas City Chiefs","2310",11.4,12,9.6,12,30
+"111","KC","2021","Andy Reid",0,7.06,0.73,5.19,0.68,6.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,367,5,113,0,0,480,"Kansas City Chiefs","2310",12,13,10,14,30
+"112","KC","2022","Andy Reid",0,9.19,0.76,5.61,0.68,7.4,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",14,435,3,61,0,0,496,"Kansas City Chiefs","2310",12,13,10.5,12,29
+"113","LA","2016","Jeff Fisher",0,-2.31,0.42,-6,0.32,-4.155,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,72,12,152,0,0,224,"Los Angeles Rams","2510",NA,NA,NA,NA,14
+"114","LA","2017","Sean McVay",1,2.31,0.56,1.94,0.58,2.125,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SINGLEBACK",11,393,5,85,0,0,478,"Los Angeles Rams","2510",NA,NA,NA,4,30
+"115","LA","2018","Sean McVay",0,9.12,0.78,7.38,0.73,8.25,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SINGLEBACK",13,463,3,64,0,0,527,"Los Angeles Rams","2510",NA,7.5,NA,11,33
+"116","LA","2019","Sean McVay",0,4.44,0.64,0.94,0.54,2.69,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SINGLEBACK",9,248,7,146,0,0,394,"Los Angeles Rams","2510",NA,12,NA,13,25
+"117","LA","2020","Sean McVay",0,6.56,0.69,0.75,0.53,3.655,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",10,258,6,114,0,0,372,"Los Angeles Rams","2510",NA,11,NA,9,23
+"118","LA","2021","Sean McVay",0,7.56,0.72,4.89,0.66,6.225,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",12,362,5,98,0,0,460,"Los Angeles Rams","2510",9.4,9.5,NA,10,29
+"119","LA","2022","Sean McVay",0,1.22,0.54,-4.94,0.35,-1.86,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,143,12,164,0,0,307,"Los Angeles Rams","2510",11,11,NA,12,18
+"120","LAC","2016","Mike McCoy",0,0.88,0.53,-1.69,0.45,-0.405,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",5,156,11,254,0,0,410,"Los Angeles Chargers","4400",7.4,6.5,9.2,4,26
+"121","LAC","2017","Anthony Lynn",1,4.31,0.64,-1.62,0.45,1.345,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,240,7,115,0,0,355,"Los Angeles Chargers","4400",NA,NA,NA,NA,22
+"122","LAC","2018","Anthony Lynn",0,8.5,0.76,1.06,0.53,4.78,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,345,4,83,0,0,428,"Los Angeles Chargers","4400",NA,NA,NA,9,27
+"123","LAC","2019","Anthony Lynn",0,2,0.56,1.06,0.54,1.53,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,148,11,189,0,0,337,"Los Angeles Chargers","4400",NA,10.5,NA,12,21
+"124","LAC","2020","Anthony Lynn",0,2.56,0.58,-1.38,0.45,0.59,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,196,9,188,0,0,384,"Los Angeles Chargers","4400",NA,8.5,NA,5,24
+"125","LAC","2021","Brandon Staley",1,3.89,0.62,0.75,0.52,2.32,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,305,8,169,0,0,474,"Los Angeles Chargers","4400",NA,6,NA,7,30
+"126","LAC","2022","Brandon Staley",0,2.5,0.58,-0.67,0.48,0.915,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,243,7,148,0,0,391,"Los Angeles Chargers","4400",8.4,8,NA,9,23
+"127","LV","2016","Jack Del Rio",0,3,0.61,-1.12,0.47,0.94,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,359,4,57,0,0,416,"Las Vegas Raiders","2520",5.2,5,5,7,26
+"128","LV","2017","Jack Del Rio",0,2.56,0.56,-2.94,0.41,-0.19,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,174,10,127,0,0,301,"Las Vegas Raiders","2520",6,9.5,6,12,19
+"129","LV","2018","Jon Gruden",1,-5.94,0.31,-5.94,0.33,-5.94,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,119,12,171,0,0,290,"Las Vegas Raiders","2520",6.4,9,6.2,6,18
+"130","LV","2019","Jon Gruden",0,0.25,0.49,-5.69,0.31,-2.72,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,177,9,136,0,0,313,"Las Vegas Raiders","2520",6.4,5,6.1,4,20
+"131","LV","2020","Jon Gruden",0,-1.94,0.43,-0.19,0.51,-1.065,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,255,8,179,0,0,434,"Las Vegas Raiders","2520",NA,NA,NA,NA,27
+"132","LV","2021","Jon Gruden",0,0.06,0.49,-4.12,0.36,-2.03,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,284,7,90,0,0,374,"Las Vegas Raiders","2520",NA,NA,NA,8,23
+"133","LV","2022","Josh McDaniels",1,0.5,0.52,-0.94,0.47,-0.22,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,189,11,206,0,0,395,"Las Vegas Raiders","2520",NA,9,NA,10,23
+"134","MIA","2016","Adam Gase",1,0.44,0.51,-4.25,0.37,-1.905,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,285,6,78,0,0,363,"Miami Dolphins","2700",7,7,6.7,6,23
+"135","MIA","2017","Adam Gase",0,-2.31,0.4,-6.81,0.31,-4.56,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,148,10,133,0,0,281,"Miami Dolphins","2700",7.8,8,7.1,10,18
+"136","MIA","2018","Adam Gase",0,-0.94,0.47,-7.25,0.25,-4.095,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,174,9,145,0,0,319,"Miami Dolphins","2700",7.6,8,7.6,6,20
+"137","MIA","2019","Brian Flores",1,-8.56,0.24,-12.62,0.17,-10.59,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,144,11,162,0,0,306,"Miami Dolphins","2700",7.4,6.5,7.2,7,19
+"138","MIA","2020","Brian Flores",0,-0.19,0.48,-1,0.48,-0.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,276,6,128,0,0,404,"Miami Dolphins","2700",6.8,6,7,5,25
+"139","MIA","2021","Brian Flores",0,0.33,0.5,-3.44,0.4,-1.555,"Other","1 RB, 2 TE, 2 WR","SHOTGUN",9,217,8,124,0,0,341,"Miami Dolphins","2700",7.6,7.5,7.3,10,21
+"140","MIA","2022","Mike McDaniel",1,3.44,0.59,-0.89,0.47,1.275,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",9,245,8,152,0,0,397,"Miami Dolphins","2700",7.4,9.5,7.6,9,23
+"141","MIN","2016","Mike Zimmer",0,2.75,0.6,-0.38,0.49,1.185,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,212,8,115,0,0,327,"Minnesota Vikings","3000",7.2,9,7.8,11,20
+"142","MIN","2017","Mike Zimmer",0,4.31,0.63,2.31,0.58,3.31,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,342,3,40,0,0,382,"Minnesota Vikings","3000",8.2,9.5,8,8,24
+"143","MIN","2018","Mike Zimmer",0,6.5,0.7,-1.31,0.46,2.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,227,7,104,1,29,360,"Minnesota Vikings","3000",8.8,10.5,8.5,13,22
+"144","MIN","2019","Mike Zimmer",0,6.56,0.7,0.81,0.54,3.685,"Other","1 RB, 2 TE, 2 WR","SINGLEBACK",10,303,6,104,0,0,407,"Minnesota Vikings","3000",9.4,10.5,8.3,8,25
+"145","MIN","2020","Mike Zimmer",0,3.44,0.61,-3.25,0.38,0.095,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",7,204,9,226,0,0,430,"Minnesota Vikings","3000",10,9,8.1,10,27
+"146","MIN","2021","Mike Zimmer",0,1.75,0.55,-1.28,0.47,0.235,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",8,228,9,197,0,0,425,"Minnesota Vikings","3000",9.2,8.5,8.2,7,27
+"147","MIN","2022","Kevin O'Connell",1,3.89,0.62,0.25,0.52,2.07,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,374,4,50,0,0,424,"Minnesota Vikings","3000",9.2,7.5,8.7,8,25
+"148","NE","2016","Bill Belichick",0,7.62,0.73,5.5,0.68,6.56,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",14,417,2,24,0,0,441,"New England Patriots","3200",12.2,12,12.4,12,28
+"149","NE","2017","Bill Belichick",0,10.62,0.8,6.5,0.73,8.56,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,381,3,77,0,0,458,"New England Patriots","3200",12.4,13,12.6,14,29
+"150","NE","2018","Bill Belichick",0,8.25,0.76,6.69,0.71,7.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,353,5,83,0,0,436,"New England Patriots","3200",12.6,13.5,12.3,13,27
+"151","NE","2019","Bill Belichick",0,10.62,0.79,8.94,0.76,9.78,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,338,4,82,0,0,420,"New England Patriots","3200",12.4,12,12.3,11,26
+"152","NE","2020","Bill Belichick",0,1.56,0.55,-1.12,0.46,0.22,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,203,9,123,0,0,326,"New England Patriots","3200",12.4,11.5,12.5,12,20
+"153","NE","2021","Bill Belichick",0,3.61,0.59,3.06,0.62,3.335,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,325,7,137,0,0,462,"New England Patriots","3200",11.4,9.5,11.8,7,29
+"154","NE","2022","Bill Belichick",0,1.88,0.54,-2.11,0.44,-0.115,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,192,9,172,0,0,364,"New England Patriots","3200",10.6,8.5,11.5,10,21
+"155","NO","2016","Sean Payton",0,2.69,0.59,-3.06,0.39,-0.185,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,270,9,199,0,0,469,"New Orleans Saints","3300",9,7,9.4,7,29
+"156","NO","2017","Sean Payton",0,6.5,0.7,0.25,0.52,3.375,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,348,5,100,0,0,448,"New Orleans Saints","3300",7.8,7,9.1,7,28
+"157","NO","2018","Sean Payton",0,7,0.73,3.62,0.64,5.31,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,440,3,64,0,0,504,"New Orleans Saints","3300",8.6,9,9.5,11,32
+"158","NO","2019","Sean Payton",0,6.56,0.7,1.94,0.57,4.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,394,3,64,0,0,458,"New Orleans Saints","3300",9,12,10,13,29
+"159","NO","2020","Sean Payton",0,4.81,0.67,5.31,0.67,5.06,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,378,4,104,0,0,482,"New Orleans Saints","3300",10.2,13,10,13,30
+"160","NO","2021","Sean Payton",0,-0.31,0.49,0.06,0.52,-0.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,235,8,129,0,0,364,"New Orleans Saints","3300",11.2,12.5,10.1,12,23
+"161","NO","2022","Dennis Allen",1,0.56,0.51,-2.12,0.43,-0.78,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,175,10,155,0,0,330,"New Orleans Saints","3300",11.6,10.5,9.7,9,19
+"162","NYG","2016","Ben McAdoo",1,2.5,0.59,-2.62,0.43,-0.0600000000000001,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,224,5,86,0,0,310,"New York Giants","3410",7.4,6,8.5,6,19
+"163","NYG","2017","Ben McAdoo",0,-3.75,0.36,-5.56,0.33,-4.655,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,53,13,193,0,0,246,"New York Giants","3410",7.8,8.5,8.8,11,15
+"164","NYG","2018","Pat Shurmur",1,-0.5,0.48,-4.44,0.35,-2.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,162,11,207,0,0,369,"New York Giants","3410",6.6,7,8.1,3,23
+"165","NYG","2019","Pat Shurmur",0,-1.69,0.43,-5.81,0.32,-3.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,133,12,208,0,0,341,"New York Giants","3410",6.2,4,7.4,5,21
+"166","NYG","2020","Joe Judge",1,-4.38,0.34,-6,0.33,-5.19,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,129,10,151,0,0,280,"New York Giants","3410",5.8,4.5,7,4,18
+"167","NYG","2021","Joe Judge",0,-4.38,0.35,-8.33,0.23,-6.355,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,88,13,170,0,0,258,"New York Giants","3410",5.8,5,6.6,6,16
+"168","NYG","2022","Brian Daboll",1,0.17,0.5,-7,0.29,-3.415,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,216,7,129,1,20,365,"New York Giants","3410",4.4,5,6.1,4,21
+"169","NYJ","2016","Todd Bowles",0,-1.62,0.44,-5.38,0.35,-3.5,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",5,145,11,130,0,0,275,"New York Jets","3430",7.2,7,7.9,10,17
+"170","NYJ","2017","Todd Bowles",0,-5.56,0.3,-7,0.32,-6.28,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",5,132,11,166,0,0,298,"New York Jets","3430",6.6,7.5,7.4,5,19
+"171","NYJ","2018","Todd Bowles",0,-1.94,0.44,-7.25,0.27,-4.595,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,151,12,182,0,0,333,"New York Jets","3430",6.4,5,7.5,5,21
+"172","NYJ","2019","Adam Gase",1,-3.12,0.39,-6.5,0.35,-4.81,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,177,9,99,0,0,276,"New York Jets","3430",5.6,4.5,7,4,17
+"173","NYJ","2020","Adam Gase",0,-6.69,0.27,-11.94,0.17,-9.315,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",2,46,14,197,0,0,243,"New York Jets","3430",6.2,5.5,6.8,7,15
+"174","NYJ","2021","Robert Saleh",1,-6.72,0.28,-8,0.26,-7.36,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,108,13,202,0,0,310,"New York Jets","3430",4.6,4.5,5.9,2,19
+"175","NYJ","2022","Robert Saleh",0,-2.12,0.42,-3.78,0.39,-2.95,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,189,10,107,0,0,296,"New York Jets","3430",4.4,3,5.5,4,17
+"176","PHI","2016","Doug Pederson",1,1.31,0.54,-2.12,0.44,-0.405,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,188,9,179,0,0,367,"Philadelphia Eagles","3700",7.8,8.5,8.7,7,23
+"177","PHI","2017","Doug Pederson",0,7.06,0.72,1.44,0.56,4.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,427,3,30,0,0,457,"Philadelphia Eagles","3700",7.6,7,8.4,7,29
+"178","PHI","2018","Doug Pederson",0,4.31,0.65,-0.81,0.48,1.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,235,7,132,0,0,367,"Philadelphia Eagles","3700",9.4,10,8.9,13,23
+"179","PHI","2019","Doug Pederson",0,4.44,0.63,1.44,0.56,2.94,"Other","1 RB, 2 TE, 2 WR","SHOTGUN",9,261,7,124,0,0,385,"Philadelphia Eagles","3700",9.2,11,8.9,9,24
+"180","PHI","2020","Doug Pederson",0,-1.06,0.47,-2.5,0.43,-1.78,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",4,94,11,217,1,23,334,"Philadelphia Eagles","3700",9,9,8.7,9,21
+"181","PHI","2021","Nick Sirianni",1,-0.19,0.48,0.78,0.54,0.295,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,281,8,163,0,0,444,"Philadelphia Eagles","3700",8.4,6.5,8.1,4,28
+"182","PHI","2022","Nick Sirianni",0,7.89,0.75,6.25,0.7,7.07,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",14,412,3,65,0,0,477,"Philadelphia Eagles","3700",8.8,6.5,8.2,9,28
+"183","PIT","2016","Mike Tomlin",0,3.44,0.61,4.62,0.66,4.03,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,321,5,78,0,0,399,"Pittsburgh Steelers","3900",9.8,10.5,10,10,25
+"184","PIT","2017","Mike Tomlin",0,6.19,0.7,5.38,0.68,5.785,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",13,356,3,50,0,0,406,"Pittsburgh Steelers","3900",9.6,10.5,10.3,11,25
+"185","PIT","2018","Mike Tomlin",0,4.75,0.65,1.38,0.55,3.065,"2 DL, 3 LB, 6 DB","1 RB, 1 TE, 3 WR","SHOTGUN",9,260,6,147,1,21,428,"Pittsburgh Steelers","3900",10.6,12,10.6,13,27
+"186","PIT","2019","Mike Tomlin",0,1.88,0.54,-0.94,0.47,0.47,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,180,8,109,0,0,289,"Pittsburgh Steelers","3900",10.8,11,10.3,9,18
+"187","PIT","2020","Mike Tomlin",0,5.25,0.68,3.5,0.59,4.375,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,345,4,71,0,0,416,"Pittsburgh Steelers","3900",10.2,8.5,10.2,8,26
+"188","PIT","2021","Mike Tomlin",0,2.61,0.58,-5.56,0.31,-1.475,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,198,7,129,1,16,343,"Pittsburgh Steelers","3900",10.6,10,10.2,12,21
+"189","PIT","2022","Mike Tomlin",0,-0.75,0.47,-5.5,0.34,-3.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,187,8,121,0,0,308,"Pittsburgh Steelers","3900",10.2,10.5,9.9,9,18
+"190","SEA","2016","Pete Carroll",0,9.06,0.78,2.12,0.58,5.59,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,279,5,69,1,6,354,"Seattle Seahawks","4600",10.6,11,8.8,10,22
+"191","SEA","2017","Pete Carroll",0,5.56,0.67,0.38,0.53,2.97,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,230,7,136,0,0,366,"Seattle Seahawks","4600",11.2,10,8.9,10,23
+"192","SEA","2018","Pete Carroll",0,3.12,0.58,-1.75,0.45,0.685,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,285,6,143,0,0,428,"Seattle Seahawks","4600",10.8,9.5,8.8,9,27
+"193","SEA","2019","Pete Carroll",0,3.75,0.62,0.94,0.54,2.345,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,316,5,89,0,0,405,"Seattle Seahawks","4600",10.2,9.5,9.4,10,25
+"194","SEA","2020","Pete Carroll",0,6.12,0.68,3.31,0.63,4.715,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",12,363,4,96,0,0,459,"Seattle Seahawks","4600",10,10.5,10,11,29
+"195","SEA","2021","Pete Carroll",0,2.12,0.56,-0.89,0.47,0.615,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,239,10,156,0,0,395,"Seattle Seahawks","4600",10.4,11.5,10.5,12,25
+"196","SEA","2022","Pete Carroll",0,0.5,0.52,-3.75,0.39,-1.625,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,248,8,159,0,0,407,"Seattle Seahawks","4600",9.8,9.5,10.5,7,24
+"197","SF","2016","Chip Kelly",1,-3.75,0.37,-8.81,0.25,-6.28,"3 DL, 4 LB, 4 DB","1 RB, 1 TE, 3 WR","SHOTGUN",2,50,14,259,0,0,309,"San Francisco 49ers","4500",9.8,6.5,8.2,5,19
+"198","SF","2017","Kyle Shanahan",1,-3.5,0.37,-5.12,0.37,-4.31,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,175,10,156,0,0,331,"San Francisco 49ers","4500",7.6,3.5,7.7,2,21
+"199","SF","2018","Kyle Shanahan",0,-0.94,0.47,-6.31,0.29,-3.625,"Other","2 RB, 1 TE, 2 WR","SHOTGUN",4,110,12,232,0,0,342,"San Francisco 49ers","4500",6.6,4,7.8,6,21
+"200","SF","2019","Kyle Shanahan",0,6.56,0.72,1.56,0.56,4.06,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,416,3,63,0,0,479,"San Francisco 49ers","4500",5,5,7.5,4,30
+"201","SF","2020","Kyle Shanahan",0,1.69,0.54,-1.31,0.46,0.19,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",6,167,10,209,0,0,376,"San Francisco 49ers","4500",6,8.5,8,13,24
+"202","SF","2021","Kyle Shanahan",0,4.81,0.65,2.61,0.59,3.71,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",10,293,7,134,0,0,427,"San Francisco 49ers","4500",6.2,9.5,8,6,27
+"203","SF","2022","Kyle Shanahan",0,6.11,0.69,5.12,0.68,5.615,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,393,4,57,0,0,450,"San Francisco 49ers","4500",7.8,8,7.7,10,26
+"204","TB","2016","Dirk Koetter",1,-0.69,0.46,-4.69,0.35,-2.69,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,212,7,142,0,0,354,"Tampa Bay Buccaneers","4900",6.2,5,6.7,6,22
+"205","TB","2017","Dirk Koetter",0,-0.56,0.46,-3.75,0.37,-2.155,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,130,11,205,0,0,335,"Tampa Bay Buccaneers","4900",6,7.5,6.5,9,21
+"206","TB","2018","Dirk Koetter",0,-1,0.46,-5.5,0.32,-3.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",5,152,11,244,0,0,396,"Tampa Bay Buccaneers","4900",6.2,7,6.6,5,25
+"207","TB","2019","Bruce Arians",1,0.69,0.52,-2.44,0.42,-0.875,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,244,9,214,0,0,458,"Tampa Bay Buccaneers","4900",5.8,5,6.2,5,29
+"208","TB","2020","Bruce Arians",0,3.75,0.62,5.75,0.69,4.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,399,5,93,0,0,492,"Tampa Bay Buccaneers","4900",6.4,6,6,7,31
+"209","TB","2021","Bruce Arians",0,10.56,0.81,7.56,0.74,9.06,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",13,441,4,70,0,0,511,"Tampa Bay Buccaneers","4900",7.4,9,6.8,11,32
+"210","TB","2022","Todd Bowles",1,2.61,0.57,3.62,0.6,3.115,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,163,9,150,0,0,313,"Tampa Bay Buccaneers","4900",8.2,12,7.1,13,18
+"211","TEN","2016","Mike Mularkey",1,1.56,0.55,-1.81,0.44,-0.125,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,240,7,141,0,0,381,"Tennessee Titans","2100",5.4,2.5,7.2,3,24
+"212","TEN","2017","Mike Mularkey",0,2.88,0.59,0.62,0.54,1.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,224,7,110,0,0,334,"Tennessee Titans","2100",5.4,6,7.3,9,21
+"213","TEN","2018","Mike Vrabel",1,1.06,0.52,-2.12,0.44,-0.53,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,215,7,95,0,0,310,"Tennessee Titans","2100",6,9,7.2,9,19
+"214","TEN","2019","Mike Vrabel",0,1.31,0.53,0.25,0.51,0.78,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",9,302,7,100,0,0,402,"Tennessee Titans","2100",6.4,9,6.8,9,25
+"215","TEN","2020","Mike Vrabel",0,3.5,0.61,2,0.58,2.75,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",11,381,5,110,0,0,491,"Tennessee Titans","2100",7.8,9,6.9,9,31
+"216","TEN","2021","Mike Vrabel",0,2.06,0.55,-0.62,0.48,0.72,"Other","1 RB, 1 TE, 3 WR","SINGLEBACK",12,343,5,76,0,0,419,"Tennessee Titans","2100",9.4,10,7.4,11,26
+"217","TEN","2022","Mike Vrabel",0,0,0.51,-4.83,0.36,-2.415,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,149,10,149,0,0,298,"Tennessee Titans","2100",10,11.5,7.7,12,18
+"218","WAS","2016","Jay Gruden",0,3.44,0.6,-1.62,0.45,0.91,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,239,7,130,1,27,396,"Washington Commanders","5110",6.2,6.5,6.3,9,25
+"219","WAS","2017","Jay Gruden",0,2.06,0.56,-3.94,0.37,-0.94,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,164,9,178,0,0,342,"Washington Commanders","5110",6.8,8.5,6.6,8,21
+"220","WAS","2018","Jay Gruden",0,-1.19,0.46,-5.31,0.33,-3.25,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,150,9,131,0,0,281,"Washington Commanders","5110",6.2,7.5,6.4,7,18
+"221","WAS","2019","Jay Gruden",0,-5.94,0.3,-8.88,0.25,-7.41,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",3,65,13,201,0,0,266,"Washington Commanders","5110",7,7,6.3,7,17
+"222","WAS","2020","Ron Rivera",1,-3.75,0.37,-3,0.41,-3.375,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,179,9,156,0,0,335,"Washington Commanders","5110",6.8,5,6.2,3,21
+"223","WAS","2021","Ron Rivera",0,-3.25,0.39,-4.22,0.38,-3.735,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",7,176,10,159,0,0,335,"Washington Commanders","5110",6.4,5,6.3,7,21
+"224","WAS","2022","Ron Rivera",0,-1.06,0.45,-2,0.44,-1.53,"Other","1 RB, 1 TE, 3 WR","SHOTGUN",8,180,8,121,1,20,321,"Washington Commanders","5110",6.2,7,6.5,7,19
